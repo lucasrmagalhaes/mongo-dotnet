@@ -145,3 +145,4 @@ SELECT * FROM products WHERE status in (“A”, “B”)
 }
 18. Acessar o MongoAtlas e ir em Clusters – Collections para ver os dados adicionados.
 19. Postman: GET – Body – None.
+20. MongoAtlas - Gráfico: Chart - Data Sources, selecionar o Banco. Após criar um Dashboard.
