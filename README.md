@@ -7,85 +7,92 @@
 4. Mão na massa.
 
 ### Front vs Backend:
-Front: Web, Mobile e Service.
-API
-Back: DB, Service e File.
+- Front: Web, Mobile e Service.
+- API
+- Back: DB, Service e File.
 
 ### API:
-Application Programming Interface
+- Application Programming Interface
 
 	“As APIs proporcionam a integração entre sistemas que possuem linguagem totalmente distintas de maneira ágil e segura. Em outras formas de integração de sistemas, o profissional que realiza o trabalho precisa, muitas vezes, instalar recursos compatíveis com o sistema no qual se busca efetuar a integração”
 
-https://vertigo.com.br/o-que-e-api-entenda-de-uma-maneira-simples/
+- https://vertigo.com.br/o-que-e-api-entenda-de-uma-maneira-simples/
 
 ### Bancos Relacionais:
-Microsoft SQL Server
-MySQL
-PostgreSQL
-Oracle
+- Microsoft SQL Server
+- MySQL
+- PostgreSQL
+- Oracle
 
 ### Bancos não Relacionais:
-NoSQL – Not Only SQL
-
-	Classe de banco de dados que fornecem um mecanismo para armazenamento e recuperação de dados que são modelados de formas diferentes das relações tubulares usadas nos bancos de dados relacionais.
-
-	Tais bancos existem desde o final da década de 1960, mas não obtiveram o apelido de “NOSQL” até atingirem dua onde popularidade no início do século 21, desencadeada pelas necessidades das empresas de Web 2.0 como Facebook, Google e Amazon.com.
+- NoSQL – Not Only SQL
+- Classe de banco de dados que fornecem um mecanismo para armazenamento e recuperação de dados que são modelados de formas diferentes das relações tubulares usadas nos bancos de dados relacionais.
+- Tais bancos existem desde o final da década de 1960, mas não obtiveram o apelido de “NOSQL” até atingirem dua onde popularidade no início do século 21, desencadeada pelas necessidades das empresas de Web 2.0 como Facebook, Google e Amazon.com.
 
 ### Origem do termo NoSQL:
-	O termo NoSQL foi usado por Carlo Strozzi em 1998 para nomear seu banco de dados relacional open source, chamado Strozzi NoSQL, que não expôs a interface padrão da linguagem de consulta estruturada (SQL), mas ainda era relacional.
+- O termo NoSQL foi usado por Carlo Strozzi em 1998 para nomear seu banco de dados relacional open source, chamado Strozzi NoSQL, que não expôs a interface padrão da linguagem de consulta estruturada (SQL), mas ainda era relacional.
 
 ### Por que usar NoSQL e não SQL:
-Performance
-Escalabilidade
-Flexibilidade
-Agilidade de desenvolvimento
-
+- Performance
+- Escalabilidade
+- Flexibilidade
+- Agilidade de desenvolvimento
 
 ### Classes NoSQL:
-Atualmente existem mais de 200 bancos NoSQL!
+- Atualmente existem mais de 200 bancos NoSQL!
 
 ### Existem 4 classes de NoSQL:
-Chave/Valor (Key-Value) | redis
-Colunas (Column Family) | cassandra
-Documento (Document model) | mongoDB
-Grafos (Graph) | neo4j
+- Chave/Valor (Key-Value) | redis
+- Colunas (Column Family) | cassandra
+- Documento (Document model) | mongoDB
+- Grafos (Graph) | neo4j
 
 ### Ranking DB:
-https://www.db-engines.com/en/ranking
+- https://www.db-engines.com/en/ranking
 
 ### Backend:
-Banco de Dados
-Integrações
-Cache
-Processamentos paralelos, em batch, etc.
-Mensageria
-Serviços, Cloud
-Regras de Negócio
-Etc...
+- Banco de Dados
+- Integrações
+- Cache
+- Processamentos paralelos, em batch, etc.
+- Mensageria
+- Serviços, Cloud
+- Regras de Negócio
+- Etc...
 
 ### Mongo DB:
-Document Model / Multi-model
-Escrito em C++
-Opensource – https://github.com/mongodb/mongo
-Multi-plataforma
-Armazena dados em formato BSON
-Versões: Community e Enterprise. - https://docs.mongodb.com/manual/installation/
+- Document Model / Multi-model
+- Escrito em C++
+- Opensource – https://github.com/mongodb/mongo
+- Multi-plataforma
+- Armazena dados em formato BSON
+- Versões: Community e Enterprise. - https://docs.mongodb.com/manual/installation/
+
+### MongoDB Atlas:
+- https://www.mongodb.com/cloud/atlas
+- Totalmente gerenciado
+- Consegue colocar na mesma vpc na cloud (GCP, Azure ou AWS)
+- Versão Enterprise
+- Tem o mongo stitch (tipo serverless em node)
+- Dá para ativar o charts: cria dashboards, paga por uso (até 1GB por mês é grátis → 500 mil views)
+- Tem command line tools
+- Estrutura: projeto > cluster > user > database
 
 ### Terminologia:
-Relational DB – Base de Dados, Tabela, Registro e Coluna.
-MongoDB – Base de Dados, Coleção, Documento e Atributo.
+- Relational DB – Base de Dados, Tabela, Registro e Coluna.
+- MongoDB – Base de Dados, Coleção, Documento e Atributo.
 
 ### Standalone:
-Atende aplicações que não necessitam de escalabilidade e alta disponibilidade.
-Possui apenas um mongod em execução.
-Não é indicado para produção.
+- Atende aplicações que não necessitam de escalabilidade e alta disponibilidade.
+- Possui apenas um mongod em execução.
+- Não é indicado para produção.
 
 ### Replicaset:
-Um conjunto de mongod que armazena os mesmos dados.
-A replicação fornece redundância e aumenta a disponibilidade dos dados.
-Fornece um nível de tolerância a falhas contra a perda de um único servidor de banco de dados.
-Recomendado para a maioria dos ambientes produtivos.
-Alguns deploys podem configurados para aumentar a capacidade de leitura.
+- Um conjunto de mongod que armazena os mesmos dados.
+- A replicação fornece redundância e aumenta a disponibilidade dos dados.
+- Fornece um nível de tolerância a falhas contra a perda de um único servidor de banco de dados.
+- Recomendado para a maioria dos ambientes produtivos.
+- Alguns deploys podem configurados para aumentar a capacidade de leitura.
 
 ### Insert:
 for (var i=0; I<=25; i++) db.contador.insert({x:i})
@@ -109,8 +116,8 @@ db.products.find({ status: { $in: [“A”, “B”]  } })
 SELECT * FROM products WHERE status in (“A”, “B”)
 
 ### MongoDB Compass:
-https://www.mongodb.com/download-center/compass
-Para realizar querying e avaliar schemas e aggregations
+- https://www.mongodb.com/download-center/compass
+- Para realizar querying e avaliar schemas e aggregations
 
 ### Mão na massa:
 1. Acessar e se cadastrar no MongoAtlas: https://www.mongodb.com/cloud/atlas
@@ -138,12 +145,3 @@ Para realizar querying e avaliar schemas e aggregations
 }
 18. Acessar o MongoAtlas e ir em Clusters – Collections para ver os dados adicionados.
 19. Postman: GET – Body – None.
-MongoDB Atlas:
-https://www.mongodb.com/cloud/atlas
-Totalmente gerenciado
-Consegue colocar na mesma vpc na cloud (GCP, Azure ou AWS)
-Versão Enterprise
-Tem o mongo stitch (tipo serverless em node)
-Dá para ativar o charts: cria dashboards, paga por uso (até 1GB por mês é grátis → 500 mil views)
-Tem command line tools
-Estrutura: projeto > cluster > user > database
