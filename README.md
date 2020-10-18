@@ -1,4 +1,4 @@
-# MongoDB + C#
+# MongoDB + .NET
 
 ### Objetivos:
 1. Entender a relação frontend e backend.
